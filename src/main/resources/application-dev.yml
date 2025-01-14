@@ -1,0 +1,26 @@
+server:
+  port: 40230
+
+spring:
+  # 配置redis
+  redis:
+    host: xxxx
+    port: 6379
+    password: xxxx
+    database: 15
+
+wechat:
+  cp:
+    appConfigs:
+      # E测试,在企业微信管理后台查看
+      - agentId: 3333 #（某一具体应用的AgentId，如果是要配置通讯录同步的应用，可以随便配置一个）
+        corpId: xxxx #（企业ID 在此页面查看：https://work.weixin.qq.com/wework_admin/frame#profile）
+        secret: xxxx # （该应用的Secret）
+        token: 111
+        aesKey: 111
+        # 下面这个是通讯录同步的secret
+      - agentId: 666
+        corpId: xxxx
+        secret: xxxx
+        token: 111
+        aesKey: 111

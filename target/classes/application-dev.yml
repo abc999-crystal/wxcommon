@@ -1,0 +1,25 @@
+server:
+  port: 40230
+
+spring:
+  redis:
+    host: 192.168.110.10
+    port: 6379
+    password: Skzz.yf.123
+    database: 15
+
+wechat:
+  cp:
+    appConfigs:
+      # EOM测试,在企业微信管理后台查看
+      - agentId: 1000023 #（某一具体应用的AgentId，如果是要配置通讯录同步的应用，可以随便配置一个）
+        corpId: wwdb7bed09944d73c7 #（企业ID 在此页面查看：https://work.weixin.qq.com/wework_admin/frame#profile）
+        secret: z4NXm48uzEVnrdvgskykaNdyYEl663gkwk7sFKl6EJI # （该应用的Secret）
+        token: 111
+        aesKey: 111
+        # 下面这个是通讯录同步的secret，跟上面oa的不是同一个应用
+      - agentId: 666
+        corpId: wwdb7bed09944d73c7
+        secret: G_efF-RIYXTBMx_8rHyZqERj_AWQYeiEeaICrilRVXo
+        token: 111
+        aesKey: 111
